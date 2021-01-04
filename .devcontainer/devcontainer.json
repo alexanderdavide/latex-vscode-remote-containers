@@ -1,0 +1,43 @@
+{
+  "name": "latex-vscode-remote-containers",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "latex-vscode-remote-containers",
+  "runServices": ["latex-vscode-remote-containers"],
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "james-yu.latex-workshop",
+    "eamodio.gitlens",
+    "shardulm94.trailing-spaces",
+    "stkb.rewrap",
+    "vscode-icons-team.vscode-icons"
+  ],
+  "settings": {
+    // General settings
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "editor.rulers": [80],
+    // Latex settings
+    "latex-workshop.latex.outDir": "./out",
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "files.associations": {
+      "*.tex": "latex"
+    },
+    "[latex]": {
+      "editor.defaultFormatter": "james-yu.latex-workshop"
+    },
+    "[bibtex]": {
+      "editor.defaultFormatter": "james-yu.latex-workshop"
+    },
+    "latex-workshop.bibtex-format.trailingComma": true,
+    "latex-workshop.bibtex-format.sort.enabled": true,
+    "latex-workshop.latexindent.args": [
+      "-c",
+      "%DIR%/",
+      "%TMPFILE%",
+      "-y=\"defaultIndent: '%INDENT%',onlyOneBackUp: 1\""
+    ]
+  }
+}

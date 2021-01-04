@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  latex-vscode-remote-containers:
+    build: .
+    image: latex-vscode-remote-containers
+    volumes:
+      - ../:/workspace
+    tty: true
