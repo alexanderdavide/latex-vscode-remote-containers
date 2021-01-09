@@ -4,7 +4,7 @@
 
 1. Install [VSCode](https://code.visualstudio.com/)
 2. Install the VSCode [Remote Development plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-3. Install [Docker](https://www.docker.com)
+3. Install [Docker](https://www.docker.com) and [Docker Compose](https://docs.docker.com/compose/)
 
 ## Starting
 
