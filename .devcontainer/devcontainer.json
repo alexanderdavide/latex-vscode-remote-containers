@@ -9,7 +9,6 @@
     "james-yu.latex-workshop",
     "eamodio.gitlens",
     "shardulm94.trailing-spaces",
-    "stkb.rewrap",
     "vscode-icons-team.vscode-icons"
   ],
   "settings": {
@@ -17,6 +16,9 @@
     "editor.formatOnSave": true,
     "files.eol": "\n",
     "editor.rulers": [80],
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingStrategy": "advanced",
     // Latex settings
     "latex-workshop.latex.outDir": "./out",
     "latex-workshop.chktex.enabled": true,
