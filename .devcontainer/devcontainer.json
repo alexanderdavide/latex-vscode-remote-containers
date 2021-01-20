@@ -22,6 +22,7 @@
     // Latex settings
     "latex-workshop.latex.outDir": "./out",
     "latex-workshop.chktex.enabled": true,
+    "latex-workshop.message.badbox.show": false,
     "latex-workshop.latex.clean.subfolder.enabled": true,
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "files.associations": {
