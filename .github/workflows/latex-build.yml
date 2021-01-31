@@ -1,0 +1,23 @@
+name: latex-build
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  latex-build:
+    runs-on: ubuntu-latest
+    env:
+      LATEX_FILE_PATH: ./main.tex
+      OUTPUT_DIR_PATH: ./out
+      OUTPUT_BASE_FILENAME: latex-vscode-remote-containers
+    steps:
+      - uses: actions/checkout@v2
+      - uses: docker://tianon-latex
+        with:
+          entrypoint: /bin/sh
+          args: -c 'latexmk -interaction=nonstopmode -pdf -outdir=$OUTPUT_DIR_PATH -jobname=$OUTPUT_BASE_FILENAME $LATEX_FILE_PATH'
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.OUTPUT_BASE_FILENAME }}
+          path: ${{ env.OUTPUT_DIR_PATH }}/${{ env.OUTPUT_BASE_FILENAME }}.pdf
