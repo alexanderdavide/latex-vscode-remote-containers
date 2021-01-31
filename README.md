@@ -1,4 +1,4 @@
-# LaTeX VSCode Remote Containers
+# LaTeX VSCode Remote Containers [![build status](https://github.com/alexanderdavide/latex-vscode-remote-containers/workflows/latex-build/badge.svg)](https://github.com/alexanderdavide/latex-vscode-remote-containers/actions)
 
 ## Prerequisites
 
@@ -23,3 +23,4 @@ Simply close VSCode.
 * This project relies on [tianon/latex](https://hub.docker.com/r/tianon/latex/) and [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop).
 * Put your LaTeX files in `/workspace` just as the `main.tex`.
 * Once you save a `.tex` file, it will automatically be built with [Latexmk](https://mg.readthedocs.io/latexmk.html) which seamlessly integrates BibTeX bibliography in the compilation.
+* The GitHub Action `latex-build` runs on each push to master to build your project and upload the PDF as an artifact of each run. You may need to adapt the `latex-build.env` section to fit your requirements. If you don't plan to use it, it is safe to delete the `.github` folder.
