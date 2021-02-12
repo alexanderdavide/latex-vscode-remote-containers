@@ -1,8 +1,6 @@
 name: latex-build
 
-on:
-  push:
-    branches: [master]
+on: push
 
 jobs:
   latex-build:
