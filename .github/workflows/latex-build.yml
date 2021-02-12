@@ -9,7 +9,10 @@ jobs:
       LATEX_FILE_PATH: ./main.tex
       OUTPUT_DIR_PATH: ./out
       OUTPUT_BASE_FILENAME: latex-vscode-remote-containers
+      TZ: Europe/Berlin
     steps:
+      - name: adds timestamp to output base filename
+        run: echo "OUTPUT_BASE_FILENAME=${OUTPUT_BASE_FILENAME}_$(date +%m%d%YT%H%M%S)" >> $GITHUB_ENV
       - uses: actions/checkout@v2
       - uses: docker://tianon/latex
         with:
