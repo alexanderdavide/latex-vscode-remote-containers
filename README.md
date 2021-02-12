@@ -10,7 +10,7 @@
 
 1. Clone this repository
 2. Open the folder in VSCode
-3. Execute 'Remote-Containers: Reopen in Container' from the VSCode command palette
+3. Execute `Remote-Containers: Reopen in Container` from the VSCode command palette
 4. VSCode automatically downloads the dependencies and starts up the LaTeX container.
 5. You will be left with a VSCode window to write your LaTeX project in. Every integrated terminal is running inside the LaTeX container.
 
