@@ -27,3 +27,4 @@ Simply close VSCode.
     * `LATEX_FILE_PATH`: path of the used LaTeX file, relative to `/workspace`
     * `OUTPUT_DIR_PATH`: path of the output directory, relative to `/workspace`
     * `OUTPUT_BASE_FILENAME`: name of the created artifact archive and containing PDF file
+    * `TZ`: [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of the timestamp that is appended to `OUTPUT_BASE_FILENAME` to make files uniquely identfiable
